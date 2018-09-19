@@ -1,26 +1,36 @@
 
 
 
-
-body{background-color: lavenderblush;
-
+div {
+    background;
 }
+body{background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);}
+
+
 h1 {
     text-align: center;
+    font-size: 50px;)
 }
 p { text-align: center;
-
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
 }
-    /* Add a black background color to the top navigation */
+table,tr,td {
+    border: 5px solid black;
+    text-align: center;
+    color: darkslategray;
+}
+
+/* Add a black background color to the top navigation- taken from w3schools.com */
 .topnav {
-    background-color: crimson;
+    background-color:lightpink;
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: aquamarine;
+    color:mediumslateblue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,10 +45,10 @@ p { text-align: center;
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: lightcyan;
-    color: black;
+    background-color:mediumslateblue;
+    color:lightpink;
 }
-t
+
 
 
 

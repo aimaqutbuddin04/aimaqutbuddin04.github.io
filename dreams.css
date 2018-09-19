@@ -1,5 +1,4 @@
-
-/* Add a black background color to the top navigation-taken from w3schools.com*/
+/* Add a black background color to the top navigation -taken form w3schools.com*/
 .topnav {
     background-color:lightpink;
     overflow: hidden;
@@ -24,14 +23,9 @@
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color:mediumslateblue;
-    color:lightpink;
-}
-h1 {center-align:center; font-size:40px
-}
+    color:lightpink; }
+body{background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); /* taken from w3school.com*/
+font-size:25px}
 
-p {center-align:center; font-size:25px
-}
-
-
-
-body{background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); /* taken from w3schools.com*/
+h1 {text-align:center;}
+p {text-align:center;}
