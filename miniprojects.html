@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Mini Projects</title>
+    <link rel="stylesheet" href="miniproject.css">
+    <script src="miniproject.js"></script>
+</head>
+
+<body>
+<div class="topnav">
+    <a href="index.html">About Aima</a>
+    <a href="Family.html">Family</a>
+    <a href="movies.html">Movies/T.V.Shows</a>
+    <a href="Dreams.html">Dreams</a>
+    <a class="active" href="miniprojects.html">Mini Projects</a>
+</div>
+
+<h1 align="center">Mini Projects</h1>
+<br>
+<b>Mini project 1:Grade Converter</b>
+    <br>
+<form name="project1">
+    <h4> Grade Converter!!</h4>
+    <br>
+    <br>
+    Please type a numeric score to convert:<input type="text" name="num1">
+    <br>
+    <br>
+    <button type="button" onclick="document.project1.result.value=assignGrade()">Assign!</button>
+    <br>
+    <br>
+    <input type="text" readonly="true" name="result" style="border-style:none">
+</form>
+<br>
+<br>
+    <b>Mini Project 2: Temperature Bug</b>
+    <br>
+    <br>
+<form name="project2">
+    <h4> Temperature Bug</h4>
+    <br>
+    Please type a number to summon a season:<input type="text" name="num1">
+    <br>
+    <br>
+    <button type="button" onclick="document.project2.result.value=temperatureBug()">Season!</button>
+    <br>
+    <br>
+    <input type="text" readonly="true" name="result" style="border-style:none">
+    <br>
+    <br>
+    <img id="weather" src="" height="200">
+</form>
+<br>
+<br>
+<b>Mini Project 3: Calorie Counter</b>
+<br>
+<br>
+<form name="project3">
+    <h4>Calorie Counter</h4>
+    Exercise choices include: Tennis,Bowling,Running and Basketball <br>
+    <br>
+    Activity chosen:<select id="activity">
+    <option value="Choose Activity">Choose Activity</option>
+        <option value="Tennis">Tennis</option>
+        <option value="Bowling">Bowling</option>
+        <option value="Running">Running</option>
+        <option value="Basketball">Basketball</option>
+    </select><br>
+    Duration of Activity in Minutes: <input type="text" name="minutes">
+    <br>
+    <br>
+    <button type="button" onclick="document.project3.result.value=CalorieCounter()">Calories Burnt...!</button>
+    <input name= "result" readonly="true" id="result" style="border-style:none">
+    <br>
+    <br>
+    <br>
+
+</form>
+
+
+
+
+
+</body>
+</html>
