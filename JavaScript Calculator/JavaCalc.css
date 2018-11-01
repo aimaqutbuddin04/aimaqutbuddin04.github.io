@@ -1,0 +1,35 @@
+
+form
+{
+    text-align: center;
+}
+button
+{
+padding: 50px;
+    background-color: darkblue;
+    font-size: 54px;
+    border-radius: 12px;
+    color: lavenderblush;
+    border: 3px solid palegreen;
+
+
+}
+input
+{
+height:100px;
+width: 500px;
+    font-size: 45px;
+    background-color: lightblue;
+
+
+}
+body
+{
+    background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    font-size:25px;
+}
+h1
+{
+    font-size:70px;
+    text-align: center;
+}
