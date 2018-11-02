@@ -63,3 +63,8 @@ h1
     font-size:70px;
     text-align: center;
 }
+button:hover
+{ background-color: lavender;
+    color:lightblue;
+}
+    
