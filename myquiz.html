@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aima's Quiz</title>
+    <script src="myquiz.js"></script>
+    <link rel="stylesheet" href="myquiz.css">
+    <div class="topnav">
+        <a href="index.html">About Aima</a>
+        <a href="Family.html">Family</a>
+        <a href="movies.html">Movies/T.V.Shows</a>
+        <a href="Dreams.html">Dreams</a>
+        <a href="miniprojects.html">Mini Projects</a>
+        <a href="binary.html">Binary</a>
+        <a href="JavaCalc.html">Calculator</a>
+        <a class="active" href="myquiz.html">My Quiz!</a>
+        <!--Taken from w3schools.com-->
+    </div>
+    <h1 >Quiz about Aima Qutbuddin!</h1>
+</head>
+<body>
+<form name="aqquiz">
+    <br><br><br>
+    1.) What year was Aima born? <br>
+    <input type="text" name="a1">
+    <br><br><br>
+
+    2.) Aima has 5 memeber in her family, however they only celebrate 4 birthdays, why? <br>
+    <input type="radio" name="a2" value="share a birthday"> Aima and her mom share birthday<br>
+    <input type="radio" name="a2" value="dislike">Aima's family dislikes her and doesn't want to celebrate her birthday<br>
+    <input type="radio" name="a2" value="twins">Aima's sisters are twins<br>
+    <input type="radio" name="a2" value="disowned"> Aima disowned the rest of her family and celebrates her birthday 4 times a year<br>
+    <br><br><br>
+
+    3.) Does Aima have any pets? <br>
+    <input type="radio" name="a3" value="yes">TRUE<br>
+    <input type="radio" name="a3" value="no">FALSE<br>
+    <br><br><br>
+
+   4.) What is Aima's dream College?<br>
+    <input type="radio" name="a4" value="Harvard"> Harvard<br>
+    <input type="radio" name="a4" value="U of I Urbana Champaign"> UofI in Urbana Champaign<br>
+    <input type="radio" name="a4" value="Northwestern">Northwestern<br>
+    <input type="radio" name="a4" value="Midwestern"> Midwestern<br>
+    <br><br><br>
+
+   5.) What is Aima's favorite Movie? <br>
+    <input type="text" name="a5">
+    <br><br><br>
+
+
+   6.) Has Aima ever been out of the country?<br>
+    <input type="radio" name="a6" value="true">TRUE<br>
+    <input type="radio" name="a6" value="false">FALSE<br>
+    <br><br><br>
+
+
+   7.) What is Aima's favorite book series? <br>
+    <input type="checkbox" name="a7a" value="HarryP"> Harry Potter<br>
+    <input type="checkbox" name="a7b" value="PercyJ"> Percy Jackson<br>
+    <input type="checkbox" name="a7c" value="HungerG"> Hunger Games<br>
+    <input type="checkbox" name="a7d" value="Divergent"> Divergent<br>
+    <input type="checkbox" name="a7e" value="TheDrkMinds"> The Darkest Minds<br>
+    <br><br><br>
+
+
+   8.) How much does Aima like her AP Computer Science teacher?<br>
+    <input type="checkbox" name="a8a" value="1-2"> 1-2<br>
+    <input type="checkbox" name="a8b" value="3-4"> 3-4<br>
+    <input type="checkbox" name="a8c" value="5-6"> 5-6 <br>
+    <input type="checkbox" name="a8d" value="7-8"> 7-8 <br>
+    <input type="checkbox" name="a8e" value="9-10"> 9-10 <br>
+    <br><br><br>
+  9.) Where is Aima's dream vacation?<br>
+    <input type="radio" name="a9" value="Turkey"> Turkey <br>
+    <input type="radio" name="a9" value="Iceland"> Iceland<br>
+    <input type="radio" name="a9" value="New Zealand"> New Zealand <br>
+    <input type="radio" name="a9" value="Russia"> Russia <br>
+    <br><br><br>
+
+  10.) What is Aima's favorite sport? <br>
+    <input type="text" name="a10">
+    <br><br><br>
+
+    <button type="button" onclick="document.getElementById('answers').innerHTML= correctAnswer()">Click for Results!</button>
+    <p id="answers">
+    </p>
+</form>
+
+</body>
+</html>
