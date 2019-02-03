@@ -5,7 +5,7 @@ function drawShapes()
     drawRectangles();
     drawTriangle();
     drawSmilie();
-    draw();
+    
 }
 
 var pic1 = new Image();
