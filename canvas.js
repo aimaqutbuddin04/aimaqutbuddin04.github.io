@@ -1,15 +1,13 @@
-//variables
-var a;
-var sR = 100;
-var moveAmountR = 0.5;
+
 function drawShapes()
 {
     drawImage();
     drawRectangles();
     drawTriangle();
-    //startAnimation();
+    drawSmilie();
+   
 }
-//image code
+
 var pic1 = new Image();
 pic1.src ="img/fire_PNG6011.png";
 
@@ -73,87 +71,31 @@ function drawTriangle()
 
     }
 }
-//circle code
-function drawCircle()
+function drawSmilie() //mozilla.org
 {
-    var ctx = document.getElementById("myCanvas").getContext("2d");
-
-
-    ctx.beginPath();
-    ctx.strokeStyle="#efeabf";
-    ctx.width=2;
-    ctx.arc(0,0,sR,0,2*Math.PI);
-    ctx.fillStyle="#efeabf";
-    ctx.fill();
-    ctx.stroke();
-}
-
-function initialize()
-{
-    drawBackground();
-    drawCircle();
-
-     var ctx = document.getElementById("myCanvas").getContext("2d");
-
-     //moon
-    ctx.beginPath();
-    ctx.strokeStyle="#efeabf";
-    ctx.width=2;
-    ctx.arc(0,0,sR,0,2*Math.PI);
-    ctx.fillStyle="#efeabf";
-    ctx.fill();
-    ctx.stroke();
-}
-
-function drawBackground()
-{
-    var canvas = document.getElementById("myCanvas").getContext("2d");
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#000033"
-}
-
-
-function startAnimation()
-{
-  animate();
-  initialize();
-}
-
- function animate()
- {
-     a = requestAnimationFrame(animate);
-     drawBackground();
-     moveRight();
-     checkMoveRight();
- }
-
-function moveRight()
-{
-    var ctx = document.getElementById("myCanvas").getContext("2d");
-    sR = sR + moveAmountR;
-
-    //moon
-    ctx.beginPath();
-    ctx.strokeStyle="#efeabf";
-    ctx.width=2;
-    ctx.arc(0,0,sR,0,2*Math.PI);
-    ctx.fillStyle="#efeabf";
-    ctx.fill();
-    ctx.stroke();
-
-}
-function checkMoveRight()
-{
-    if (sR > 150 )
+    var canvas = document.getElementById('myCanvas');
+    if (canvas.getContext)
     {
-        moveAmountR = moveAmountR * (-1);
-    }
-    if (sR < 90 )
-    {
-        moveAmountR = moveAmountR * (-1);
-    }
+        var ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
 
+        ctx.moveTo(110, 75);
+        ctx.arc(75, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+
+        ctx.moveTo(65, 65);
+        ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  // Left eye
+
+        ctx.moveTo(95, 65);
+        ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
+
+        ctx.stroke();
+    }
 }
+
+
+    
+  
 
 
 
