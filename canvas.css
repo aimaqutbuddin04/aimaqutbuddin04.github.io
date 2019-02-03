@@ -29,3 +29,6 @@
     background-color:mediumslateblue;
     color:lightpink;
 }
+
+
+body {background:linear-gradient(to bottom,#33ccff 0%,#ff99cc 100%); font-size:25px} /* taken from w3schools.com*/
