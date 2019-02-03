@@ -5,7 +5,7 @@ function drawShapes()
     drawRectangles();
     drawTriangle();
     drawSmilie();
-   
+    draw();
 }
 
 var pic1 = new Image();
@@ -16,7 +16,7 @@ function drawImage()
     var ctx = document.getElementById("myCanvas").getContext("2d");
     ctx.drawImage(pic1,140,275,120,185);
 }
-//rectangle code
+
 function drawRectangles()
 {
 
@@ -33,10 +33,11 @@ function drawRectangles()
     ctx.fillRect(0,450,500,200);
 }
 // triangle code
-function drawTriangle()
+function drawTriangle() //mozilla.org
 {
     var canvas = document.getElementById("myCanvas");
-    if (canvas.getContext) {
+    if (canvas.getContext)
+    {
         var ctx = canvas.getContext('2d');
 
         ctx.beginPath();
@@ -59,7 +60,8 @@ function drawTriangle()
 
 
     }
-    if (canvas.getContext) {
+    if (canvas.getContext)
+    {
         var ctx = canvas.getContext('2d');
 
         ctx.beginPath();
@@ -94,15 +96,10 @@ function drawSmilie() //mozilla.org
 }
 
 
-    
-  
-
-
-
 
 
 //function drawLines()
-{
+
     //var canvas = document.getElementById("myCanvas");
     //var ctx =canvas.getContext("2d");
     //ctx.beginPath();
@@ -121,17 +118,49 @@ function drawSmilie() //mozilla.org
     //ctx.lineTo(500,500);
     //ctx.strokeStyle= "FF0000";
     //ctx.stroke();
-}
+
 
 //function drawText()
-{
+
     //var canvas = document.getElementById("myCanvas");
     //var ctx =canvas.getContext("2d");
     //ctx.fillStyle = "#009999 ";
     //ctx.font ="30px Arial";
     //ctx.fillText("BLAH,BLAH,BALH",200,300);
-}
+
 //draw an image dynamically
+//circle code
+//function drawCircle()
+
+//var canvas = document.getElementById("myCanvas");
+//var ctx = canvas.getContext("2d");
+//ctx.beginPath();
+//ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+//ctx.stroke();
+//ctx.fillStyle = "#e6e6e6";
+//ctx.strokeStyle="#e6e6e6";
+
+
+//function drawCircle()
+
+//var canvas = document.getElementById("myCanvas");
+//var ctx = canvas.getContext("2d");
+//ctx.beginPath();
+//ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+//ctx.stroke();
+//ctx.fillStyle = "#e6e6e6";
+//ctx.strokeStyle="#e6e6e6";
+
+
+
+//var canvas = document.getElementById("myCanvas");
+//var ctx = canvas.getContext("2d");
+
+//ctx.beginPath();
+//ctx.moveTo(100,0);
+//ctx.lineTo(100,200);
+
+//ctx.stroke();
 
 
 
